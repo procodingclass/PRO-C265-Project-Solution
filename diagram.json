@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "Gautam Ahuja",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 14, "left": 70.67, "attrs": {} },
+    { "type": "wokwi-ds1307", "id": "rtc1", "top": 70.53, "left": -38.63, "attrs": {} }
+  ],
+  "connections": [
+    [ "rtc1:GND", "uno:GND.1", "black", [ "h-22.86", "v-106.43", "h232.78" ] ],
+    [ "rtc1:5V", "uno:5V", "red", [ "h-42.6", "v132.79", "h305.16" ] ],
+    [ "rtc1:SDA", "uno:A4", "green", [ "h-31.09", "v141.39", "h369.32" ] ],
+    [ "rtc1:SCL", "uno:A5", "blue", [ "h-20.4", "v144.23", "h372.61" ] ]
+  ]
+}
